@@ -3,3 +3,14 @@
     margin: 0; 
     box-sizing: border-box;
 }
+/* -------------------universal styles ---------------------------------*/
+
+body {
+    border: 2px solid orange;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, section, div, h1, h2, h3 {
+    border: 2px solid rgb(15, 14, 14);
+    margin-bottom: 1rem;
+}
