@@ -10,7 +10,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header, section, div, h1, h2, h3 {
+header, section, div, i, h1, h2, h3 {
     border: 2px solid rgb(15, 14, 14);
     margin-bottom: 1rem;
 }
+
