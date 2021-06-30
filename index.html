@@ -7,13 +7,20 @@
             <!----------------------------------- This is the gridlex code for the whole page ----------------------------------->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-            <!------------------------------------------- this is our custom stylesheet ---------------------------------------->
-            <link href="/style.css" rel="stylesheet">
-
             <!------------------------------------------- this is our google fonts link ---------------------------------------->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">  
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+            <!------------------------------------------- this is our font awesome icons ---------------------------------------->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
+            
+            
+            <!------------------------------------------- this is our custom stylesheet ---------------------------------------->
+            <link href="/style.css" rel="stylesheet">
+
+ 
         
         
         </head>    
@@ -21,24 +28,37 @@
         <body>
             <!-------------------------------------- This is the header section ------------------------------------------->
             <header>
-                <div>
-                    <h2>     Logo     </h2>
-                    <h1> Bussines name  </h1>   
-                </div>    
-                <div>
-                    <nav>
-                        <a href="/index.html">      Home        </a>
-                        <a href="/about.html">      About       </a>
-                        <a href="/products.html">   Products    </a>
-                        <a href="/contact.html">    Contact     </a>
-                    </nav>
-                </div>    
+               <section  class="grid-spaceAround m-hight-30">
+                    <div class="col-5 text-center">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <div  class="col-5 margin-t-2">    
+                        <h1> Grass master  </h1>   
+                    </div>  
+                </section>  
+                <section> 
+                    <div class="bg-green grid">
+                        <nav class="col-3 text-center underline">
+                            <a href="/index.html">      Home        </a>
+                        </nav>
+                        <nav  class="col-3 text-center">  
+                            <a href="/about.html">      About       </a>
+                        </nav>  
+                        <nav  class="col-3 text-center">   
+                            <a href="/products.html">   Products    </a>
+                        </nav> 
+                        <nav  class="col-3 text-center">
+                            <a href="/contact.html">    Contact     </a>
+                        </nav>
+                    </div> 
+                </section>   
             </header>    
             <!---------------------------------------------- Banner section ----------------------------------------->    
-            <section class="banner"> 
-                <div> 
-                    <h3> Text </h3>               
-                </div>     
+            <section class="banner grid-center">
+                <div class="col-6-middle centered text-center">
+                  <h2> This this a heading </h2>
+                  <h3> This is a sub-heading </h3>
+                </div>
             </section>
 
             <!------------------------------------ This is the text and image section ------------------------------------------------> 

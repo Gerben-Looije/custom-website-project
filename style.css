@@ -12,7 +12,7 @@
     box-sizing: 
   }
   
-  img { max-width: 100%; }
+  /* img { max-width: 100%; } */
   
   /* Optional padding to override default gridlex columns */ 
   [class*=col] { padding: 0; }
@@ -98,12 +98,26 @@ header, section, div, i, h1, h2, h3 {
 .tall-90    { min-height: 90vh }
 .tall-100   { min-height: 100vh}
 
+/* Maximum height classes -----------------------------*/
+.m-hight-30    { max-height: 30vh }
+
 /* Background & images -------------------------------*/
-.bg-dark { 
-    background-color: rgb(60,60,65); 
+.bg-green { 
+    background-color: #68a236; 
     color: white;
   }
-  
+
+.banner {
+    background-image: url('images/banner-gras.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+
+.col-3 {
+    padding: 1% 1%;
+}
 .bg-featured { background-color: lightblue;        }
 .bg-light    { background-color: rgb(245,245,245); }
  
@@ -119,7 +133,7 @@ header, section, div, i, h1, h2, h3 {
   /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column,
    it can't be applied to the column itself. */
   
-.landscape     { padding-bottom: 66%:  }
+.landscape     { padding-bottom: 66%;  }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
@@ -134,9 +148,15 @@ header, section, div, i, h1, h2, h3 {
 
 /* Typography styles ----------------------------------*/
 body {
-    font-family: "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(10,10,10);  
   }
+
+h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+}  
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -174,9 +194,10 @@ a:hover {
 .font-weight-normal     { font-weight: normal; }
 .font-weight-extra-bold { font-weight: 800;    }
 
-.text-left    { text-align: left;   }
-.text-right   { text-align: right;  }
-.text-center  { text-align: center; }
+.text-left     { text-align: left;    }
+.text-right    { text-align: right;   }
+.text-center   { text-align: center;  }
+.text-center-v { align-items: center; }
 
 .featured-text { color: orange; }
 .white-text    { color: white;  }
@@ -194,10 +215,9 @@ a:hover {
 
 /* Font awesome icons ---------------------------------*/
 .fas, .fab {
-    display: block;
+    padding: 2.5rem;
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 /* Header & footer styles -----------------------------*/
@@ -205,6 +225,11 @@ header {
     background-image: url('');
     background-size: cover 
     background-position: center
+}
+
+.underline {
+    font-weight: 100;
+    text-decoration: underline;
 }
 
 h3 {
