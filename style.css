@@ -9,7 +9,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: 
+    box-sizing: border-box;
   }
   
   /* img { max-width: 100%; } */
@@ -20,19 +20,22 @@
 /* --------------------------------------------------- universal styles & utility classes ------------------------------------------------*/
 /* temporarily styles ---------------------------------*/
 body {
-    border: 2px solid orange;
+    background-color: #1E9600;
+    /* border: 2px solid orange; */
     font-family: 'Open Sans', sans-serif;
+    /* padding: 1%; */
 }
 
-header, section, div, i, h1, h2, h3 {
-    border: 2px solid rgb(15, 14, 14);
-    margin-bottom: 1rem;
+header, section, div, i, h1, h2, h3, p {
+    /* border: 2px solid rgb(15, 14, 14); */
+    /* margin-bottom: 1rem; */
 }
 
 /* padding utility classes --------------------------*/
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
+.padded-bg { padding: 15%;  }
 
 .padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem;   }
@@ -107,17 +110,20 @@ header, section, div, i, h1, h2, h3 {
     color: white;
   }
 
+.bg-l-green {
+    background-color: #68a236;
+}
 .banner {
     background-image: url('images/banner-gras.jpg');
     background-size: cover;
     background-position: center;
     min-height: 70vh;
+    /* margin-bottom: 0.3rem; */
 }
 
-
-.col-3 {
+/* .col-3 {
     padding: 1% 1%;
-}
+} */
 .bg-featured { background-color: lightblue;        }
 .bg-light    { background-color: rgb(245,245,245); }
  
@@ -129,6 +135,8 @@ header, section, div, i, h1, h2, h3 {
     background-position: center; 
     background-repeat: no-repeat;
   }
+
+  
   
   /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column,
    it can't be applied to the column itself. */
@@ -159,18 +167,20 @@ h1 {
 }  
 
 h2, h3, h4, h5, h6 {
-  line-height: 1.1;
-  margin-bottom: 1.2rem;
+  line-height: 2;
+  color: white;
+  /* margin-bottom: 1.2rem; */
 }
 
 h2 { font-size: 2.5rem;}
-h3 { font-size: 1.5rem;}
-h4 { font-size: 1.5rem;}
+h3 { font-size: 0.5rem;}
+h4 { font-size: 0.7rem;}
 
 p {
+  color: white;
   font-weight: 200;  
   line-height: 1.4; 
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2:last-child, 
@@ -199,6 +209,7 @@ a:hover {
 .text-center   { text-align: center;  }
 .text-center-v { align-items: center; }
 
+
 .featured-text { color: orange; }
 .white-text    { color: white;  }
 
@@ -220,12 +231,18 @@ a:hover {
     font-size: 5rem;
 }
 
+.icon-s {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0rem 5rem;
+}
+
 /* Header & footer styles -----------------------------*/
 header {
     background-image: url('');
     background-size: cover 
-    background-position: center
-}
+    }
 
 .underline {
     font-weight: 100;
@@ -233,8 +250,8 @@ header {
 }
 
 h3 {
-    font-size: 5.5rem;
-    line-height: 1;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 footer {
@@ -243,22 +260,48 @@ footer {
 
 
 
-/* indivitiual Background images  ---------------------*/
+/* indivitiual Background images and video's ---------------------*/
+.bg-mower {
+    background-image: url('/images/edge-mower.jpg');
+    /* min-height: 10rem; */
+}
+
+.bg-stadium {
+    background-image: url('/images/stadium.jpg');
+    /* min-height: 10rem; */
+}
+
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; overflow: hidden; 
+    max-width: 100%; } 
+    
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
 
 
 /* Buttons & forms ------------------------------------*/
-input, textarea {
+/* input, textarea {
     width: 100%;
     display: block;
-}
+} */
 
 /* Testimonial block ----------------------------------*/
-.quote-icon {
+/* .quote-icon {
     font-size: 6rem;
     display: inline-block;
     color: rgb(120,120,120);
     line-height: 1;
-}
+} */
 
 
 
