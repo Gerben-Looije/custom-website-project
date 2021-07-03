@@ -26,7 +26,7 @@ body {
     /* padding: 1%; */
 }
 
-header, section, div, i, h1, h2, h3, p {
+header, section, div, nav, span, i, h1, h2, h3, p {
     /* border: 2px solid rgb(15, 14, 14); */
     /* margin-bottom: 1rem; */
 }
@@ -166,21 +166,31 @@ h1 {
     text-align: center;
 }  
 
+
 h2, h3, h4, h5, h6 {
   line-height: 2;
   color: white;
   /* margin-bottom: 1.2rem; */
 }
 
-h2 { font-size: 2.5rem;}
-h3 { font-size: 0.5rem;}
-h4 { font-size: 0.7rem;}
+h2 { font-size: 2.5rem;
+     font-weight: normal;     
+}
+
+h4 { 
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
 
 p {
   color: white;
-  font-weight: 200;  
+  font-size: 1rem;
+  font-weight: lighter;  
   line-height: 1.4; 
   margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 h2:last-child, 
@@ -197,6 +207,10 @@ a {
 
 a:hover {
     color: orange;
+}
+
+.border {
+    border: 5px solid #68a236;
 }
 
 /* Typography classes ----------------------------------*/
@@ -251,6 +265,7 @@ header {
 
 h3 {
     font-size: 1rem;
+    font-weight: normal;
     line-height: 1.5;
 }
 
@@ -258,6 +273,9 @@ footer {
     border: none;
 }
 
+a {
+    display: block;
+}
 
 
 /* indivitiual Background images and video's ---------------------*/
