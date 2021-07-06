@@ -23,7 +23,7 @@ header, section, div, nav, span, i, h1, h2, h3, p {
 /* padding utility classes --------------------------*/
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
-.padded-l  { padding: 9%;   }
+.padded-a  { padding: 8%;   }
 .padded-lg { padding: 10%;  }
 .padded-bg { padding: 15%;  }
 
@@ -56,6 +56,7 @@ header, section, div, nav, span, i, h1, h2, h3, p {
 .padded-l-0 { padding-left: 0;   }
 .padded-r-0 { padding-bottom: 0; }
 
+
 /* Margin utility classes -----------------------------*/
 .margin-t { margin-top: 5%;    }
 .margin-b { margin-bottom: 5%; }
@@ -72,15 +73,16 @@ header, section, div, nav, span, i, h1, h2, h3, p {
 .margin-l-2 { margin-left: 2rem;   }
 .margin-r-2 { margin-right: 2rem;  } 
 
-.margin-t-0 { margin-top: 0;    }
-.margin-b-0 { margin-bottom: 0; }
-.margin-l-0 { margin-left: 0;   }
-.margin-r-0 { margin-right: 0;  }
+.margin-t-0 { margin-top: 0;     } 
+.margin-b-0 { margin-bottom: 0;  }
+.margin-l-0 { margin-left: 0;    }
+.margin-r-0 { margin-right: 0;   }
 
 .margin-tb  { margin-top: 5%; margin-bottom: 5%;   }
 .margin-lr  { margin-left: 5%; margin-right: 5%;   }
 .margin-t-b { margin-top: 10%; margin-bottom: 10%; }
 .margin-l-r { margin-left: 10%; margin-right: 10%; }
+
 
 /* Minimum height classes -----------------------------*/
 .tall-10    { min-height: 10vh }
@@ -341,7 +343,7 @@ img {
     width: 100%;
     display: block;
     min-height: 4em;
-    margin-botttom: 5%; 
+    margin-bottom: 5%; 
 }
 
 textarea {
@@ -349,7 +351,7 @@ textarea {
     display: block;
     min-height: 10em;
     margin-top: 5%;
-    margin-botttom: 5%;
+    margin-bottom: 5%;
 }
 
 .button {
@@ -365,5 +367,107 @@ textarea {
 } */
 
 
+/*------------- General CSS responsive styles (Apply everywhere unless override) ----------*/
+
+.show-xs,
+.show-sm,
+.show-md {
+    display: none;
+}
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
+
+@media(max-width:64em) {
+
+    body { border: 2px solid orange; 
+           padding: 0.5rem;
+        }
+
+	.show-md { display: block; }
+	.hide-md { display: none;  }
+
+    h2 { font-size: 2rem;}
+
+    h4 { font-size: 1rem;}
+    
+    .padded-s-m { padding: 7%; }
+
+    .md-tall-90 { min-height: 90vh; }
+
+    .md-margin-t-0 { margin-top: 0; }
+
+    .md-margin-0 { margin: 0; }
+
+    .md-padded-lr { padding: 5%; }
+    
+    .md-padded-b { padding: 5%; }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media(max-width:48em) {
+
+    body { border: 2px solid blue;
+           padding: 0.5rem;
+        }
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+
+    .sm-text-center { text-align: center; }
+    .sm-text-left   { text-align: left;   }
+    .sm-text-right  { text-align: right;  }
+
+    .sm-padded      { padding: 2.5%;   }
+    .sm-padded-1    { padding: 1rem;   }
+    .sm-padded-05   { padding: 0.5rem; }
+
+    .sm-padded-t-0  { padding-top: 0;    }
+    .sm-padded-b-0  { padding-bottom: 0; }
+    .sm-padded-l-0  { padding-left: 0;   }
+    .sm-padded-r-0  { padding-right: 0;  }
+
+    .sm-margin-t-0  { margin-top: 0;     }
+    .sm-margin-b-0  { margin-bottom: 0;  }
+    .sm-margin-l-0  { margin-left: 0;    }
+    .sm-margin-r-0  { margin-right: 0;   }
+    .sm-margin-0    { margin: 0;         }
+    .sm-margin-t-3  { margin-top: 0.63%; }   
+
+    .fas { 
+        font-size: 3rem;
+        padding: 0;  
+    }
+
+    .sm-margin-bottom { margin-bottom: 2.5rem; }
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) {
+
+    body { border: 2px solid red; 
+           padding: 0.5rem;
+        }
+
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    .fas {
+        font-size: 2rem;
+    }
+
+    h1 { font-size: 4rem; }
+
+    h2 { font-size: 1.8rem; 
+    }
+
+    .xs-margin-bottom { margin-bottom: 4rem; }
+}
 
 
