@@ -383,9 +383,9 @@ textarea {
 
 @media(max-width:64em) {
 
-    body { border: 2px solid orange; 
+    /* body { border: 2px solid orange; 
            padding: 0.5rem;
-        }
+        } */
 
 	.show-md { display: block; }
 	.hide-md { display: none;  }
@@ -428,9 +428,9 @@ textarea {
 
 @media(max-width:48em) {
 
-    body { border: 2px solid blue;
+    /* body { border: 2px solid blue;
            padding: 0.5rem;
-        }
+        } */
 
     .show-sm { display: block; }
     .hide-sm { display: none;  }
@@ -474,8 +474,8 @@ textarea {
 
 @media(max-width:36em) {
 
-    body { border: 2px solid red; 
-           padding: 0.5rem;
+    /* body { border: 2px solid red; 
+           padding: 0.5rem; */
         }
 
     .show-xs { display: block; }
