@@ -8,6 +8,8 @@
     
   /* Optional padding to override default gridlex columns */ 
   [class*=col] { padding: 0; }
+
+  /* [class*="grid-"] { margin: 0; } */
   
 /* --------------------------------------------------- universal styles & utility classes ------------------------------------------------*/
 /* temporarily styles ---------------------------------*/
@@ -392,17 +394,33 @@ textarea {
 
     h4 { font-size: 1rem;}
     
+    .md-p { line-height: 1rem; }
+
     .padded-s-m { padding: 7%; }
 
-    .md-tall-90 { min-height: 90vh; }
+    .padded-md  { padding: 2%; }
+
+    .md-tall-50 { min-height: 50vh; }
+
+    .md-tall-80 { min-height: 80vh; }
+
+    .md-tall-60 { min-height: 60vh; }
 
     .md-margin-t-0 { margin-top: 0; }
+
+    .md-margin-t { margin-top: 4rem; }
 
     .md-margin-0 { margin: 0; }
 
     .md-padded-lr { padding: 5%; }
     
     .md-padded-b { padding: 5%; }
+
+    .md-padded-l { padding: 1rem;}
+
+
+
+    
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
@@ -424,6 +442,7 @@ textarea {
     .sm-padded      { padding: 2.5%;   }
     .sm-padded-1    { padding: 1rem;   }
     .sm-padded-05   { padding: 0.5rem; }
+    .sm-padded-0    { padding: 0;      }
 
     .sm-padded-t-0  { padding-top: 0;    }
     .sm-padded-b-0  { padding-bottom: 0; }
@@ -442,7 +461,11 @@ textarea {
         padding: 0;  
     }
 
+    .sm-text { font-size: 1.5rem; }
     .sm-margin-bottom { margin-bottom: 2.5rem; }
+
+    h1 { font-size: 4.5rem; }
+
 
 }
 
@@ -462,10 +485,11 @@ textarea {
         font-size: 2rem;
     }
 
-    h1 { font-size: 4rem; }
+    h1 { font-size: 3rem; }
 
-    h2 { font-size: 1.8rem; 
-    }
+    h2 { font-size: 1rem; }
+
+    p { font-size: 0.7rem; }
 
     .xs-margin-bottom { margin-bottom: 4rem; }
 }
