@@ -488,8 +488,8 @@ textarea {
     h1 { font-size: 3rem; }
 
     h2 { font-size: 1rem; }
-
-    p { font-size: 0.7rem; }
+/* 
+    p { font-size: 0.7rem; } */
 
     .xs-margin-bottom { margin-bottom: 4rem; }
 }
