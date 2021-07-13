@@ -465,8 +465,6 @@ textarea {
     .sm-margin-bottom { margin-bottom: 2.5rem; }
 
     h1 { font-size: 4.5rem; }
-
-
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -488,8 +486,8 @@ textarea {
     h1 { font-size: 3rem; }
 
     h2 { font-size: 1rem; }
-/* 
-    p { font-size: 0.7rem; } */
+
+    /* p { font-size: 0.7rem; } */
 
     .xs-margin-bottom { margin-bottom: 4rem; }
 }
