@@ -9,7 +9,7 @@
   /* Optional padding to override default gridlex columns */ 
   [class*=col] { padding: 0; }
 
-  /* [class*="grid-"] { margin: 0; } */
+  [class*="grid-"] { margin: 0; }
   
 /* --------------------------------------------------- universal styles & utility classes ------------------------------------------------*/
 /* temporarily styles ---------------------------------*/
@@ -72,6 +72,12 @@ body {
 .margin-l-2 { margin-left: 2rem;   }
 .margin-r-2 { margin-right: 2rem;  } 
 
+.margin-t-3 { margin-top: 3.5rem;    }
+.margin-t-4 { margin-top: 4rem;    }
+
+.margin-b-3 { margin-bottom: 3rem;    }
+.margin-b-4 { margin-bottom: 4rem;    }
+
 .margin-t-0 { margin-top: 0;     } 
 .margin-b-0 { margin-bottom: 0;  }
 .margin-l-0 { margin-left: 0;    }
@@ -113,8 +119,7 @@ body {
     background-image: url('images/banner-gras.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 70vh;
-    /* margin-bottom: 0.3rem; */
+    min-height: 100vh;
 }
 
 .bg-featured { background-color: lightblue;        }
@@ -175,11 +180,6 @@ h2 {
 h4 { 
     font-size: 1.8rem;
     font-weight: lighter;
-}
-
-
-i {
-    /* margin: 0.8rem; */
 }
 
 p {
