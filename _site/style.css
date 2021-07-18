@@ -116,7 +116,7 @@ body {
 }
 
 .banner {
-    background-image: url('images/banner-gras.jpg');
+    background-image: url('/images/banner-gras.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
