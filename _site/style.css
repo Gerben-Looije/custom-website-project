@@ -261,7 +261,13 @@ a:hover {
     line-height: 0.5;
 }
 
-
+.style {
+    padding: 7.3rem;
+    /* border: 2px solid orange; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
 
 /* Header & footer styles -----------------------------*/
 
@@ -308,7 +314,7 @@ a {
 
 .bg-card-1 {
     background-image: url('/images/card-1.jpg')
-    /* min-height: 10rem; */
+    /* min-height: 10rem;  */
 }
 
 .bg-golf {
@@ -316,7 +322,12 @@ a {
     /* min-height: 10rem; */
 }
 
-img {
+/* .bg-rake {
+    background-image: url('/images/rake.jpg')
+    /* min-height: 10rem; */
+} */
+
+.img {
     max-width: 100%;
 }
 

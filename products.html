@@ -14,14 +14,17 @@ icon:
    category: Toxic
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
 card:
- - object: Rake-fork
-   featured_image: /images/rake-fork
- - object: mower 
+ - object: Rake
+   featured_image: /images/rake.jpg
+ - object: Mower 
    featured_image: /images/card-1.jpg
- - object: Caster   
+ - object: Tractor   
    featured_image: /images/tractor.jpg
  - object: Shovel 
-   featured_image: /images/rake-fork.jpg 
+   featured_image: /images/shovel-big.jpg 
+landscaping:
+ - discription: We used the Grass master for our landscaping, irrigation, and yard lighting projects.
+   customer: "- A very happy costumor"
 ---
 
             <!----------------------------------------------- This is the icon with text section ---------------------------------------------->
@@ -41,29 +44,29 @@ card:
                 <!-- card 1 -->
                 <h2 class="text-center bg-green"> new in our collection </h2>
                 {% for item in page.card %}
-                <div  class="grid-spaceAround text-center padded-sm margin-t-4"> 
-                    <div class="col-2_sm-5">  
-                        <div>
-                            <h2 class="bg-green"> {{item.object}} </h2>   
-                            <img style="background-image: url('{{item.featured_image}}')"> 
-                        </div>    
-                    </div> 
+                <div class="grid-spaceAround text-center padded-sm margin-t-4"> 
+                  <div class="col-2_sm-5">  
+                    <h2 class="bg-green"> {{item.object}} </h2>   
+                    <h2 class="style bg-image tall-60" style="background-image: url('{{item.featured_image}}')"> </h2> 
+                  </div>    
                 </div>
                 {% endfor %}   
             </section>
 
             <!---------------------------- here we put the testimonial block -------------------------------------->  
             <section class="grid-spaceAround margin-t-b">
+            {% for item in page.landscaping%}  
             <div class="col-2 text-center">
                 <span class="quote-icon">“</span>
             </div>
             <div class="col-8 text-center"> 
-                <p class="medium-text sm-text"> We used the Grass master for our landscaping, irrigation, and yard lighting projects. </p>
-                <p> - A very happy costumor</p>
+                <p class="medium-text sm-text"> {{item.discription}} </p>
+                <p> {{item.customer}}</p>
             </div>    
             <div class="col-2 text-center">
                 <span class="quote-icon">”</span>
             </div> 
+            {% endfor %}
             </section>  
 
  
