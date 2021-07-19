@@ -4,8 +4,8 @@ banner:
  - heading: Because a beautiful lawn doesn’t happen by accident.
    discription: No job too big or too small.
    featured_image: /images/banner-gras.jpg
-revieuw:   
- - lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam commodi quidem consequatur consectetur totam sapiente explicabo at possimus? Itaque nesciunt a deleniti officiis impedit cupiditate excepturi id recusandae praesentium dicta.
+review:   
+ - heading: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam commodi quidem consequatur consectetur totam sapiente explicabo at possimus? Itaque nesciunt a deleniti officiis impedit cupiditate excepturi id recusandae praesentium dicta.
    customer: - A happy customer  
 ---
 
@@ -46,19 +46,19 @@ revieuw:
                 </div>
             </section>
 
-            <!---------------------------------------- This is the revieuw section ------------------------------------->
+            <!---------------------------------------- This is the review section ------------------------------------->
             <section class="grid-spaceAround  text-center"> 
                 <div class="col-12 margin-b bg-green"> 
                     <h2> Reviews </h2>
                 </div>
 
-                {% for item in page.revieuw %}
+                {% for item in page.review %}
                 <div class="col-3_xs-8 padded bg-green xs-margin-bottom">
-                    <p> {{item.lorem}} </p>
+                    <p> {{item.heading}} </p>
                     <p> <em> {{item.customer}} </em></p>
                 </div> 
                 {% endfor %} 
-            </section>
+            </section> 
 
             <!-------------------------------------- This is the youtube video section ------------------------------------------>
             <section class="grid-spaceAround"> 
