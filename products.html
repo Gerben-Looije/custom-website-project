@@ -1,67 +1,55 @@
 ---
 layout: default
+icon:
+ - group: fas fa-bacteria
+   category: Bacteria
+   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
+ - group: fas fa-fire
+   category: Flammable
+   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
+ - group: fas fa-head-side-mask
+   category: Use mask
+   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!     
+ - group: fas fa-skull-crossbones
+   category: Toxic
+   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
+card:
+ - object: Rake-fork
+   featured_image: /images/rake-fork
+ - object: mower 
+   featured_image: /images/card-1.jpg
+ - object: Caster   
+   featured_image: /images/tractor.jpg
+ - object: Shovel 
+   featured_image: /images/rake-fork.jpg 
 ---
+
             <!----------------------------------------------- This is the icon with text section ---------------------------------------------->
             <section class="grid-spaceAround text-center padded-tb">   
+                {% for item in page.icon %}
                 <div class="col-2_sm-5"> 
-                        <i class="fas fa-bacteria"></i>
+                        <i class="{{item.group}}"> </i>
                     <div class="text-left"> 
-                        <p> <h2 class="text-center"> Bacteria </h2> <br> Lorem ipsum dolor sit amet consectetur  lorem sit amat it amet lorem sit amat consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing e </p>
+                        <p> <h2 class="text-center"> {{item.category}} </h2> <br> {{item.discription}} </p>
                     </div>
-                </div>  
-                <div class="col-2_sm-5"> 
-                        <i class="fas fa-fire"></i>
-                    <div class="text-left">    
-                        <p> <h2 class="text-center"> Flammable </h2> <br> Lorem ipsum adipisicing elit. Lorem ipsum dolor sit amet lorem sit amat lorem sit amat consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div> 
                 </div>
-                <div class="col-2_sm-5">  
-                        <i class="fas fa-head-side-mask"></i>
-                    <div class="text-left">  
-                        <p> <h2 class="text-center"> Use mask </h2> <br> Lorem ipsum dolor sit amet consectetur adipisicing loerm sit amat lorem sit amat lorem sit amat lorem sit amat elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>  
-                <div class="col-2_sm-5"> 
-                        <i class="fas fa-skull-crossbones"></i>
-                    <div class="text-left">  
-                        <p> <h2 class="text-center">Toxic</h2> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>  
+                {% endfor %}    
             </section>
 
             <!----------------------------------------------- This is the cards section ---------------------------------------------->   
             <section class="padded-tb margin-t-4"> 
                 <!-- card 1 -->
                 <h2 class="text-center bg-green"> new in our collection </h2>
+                {% for item in page.card %}
                 <div  class="grid-spaceAround text-center padded-sm margin-t-4"> 
                     <div class="col-2_sm-5">  
                         <div>
-                            <h2 class="bg-green"> Rake </h2>   
-                            <img src="https://source.unsplash.com/eJseU5B3Mgk">
+                            <h2 class="bg-green"> {{item.object}} </h2>   
+                            <img style="background-image: url('{{item.featured_image}}')"> 
                         </div>    
                     </div> 
-                    <!-- card 2 -->
-                    <div class="col-2_sm-5">  
-                        <div>
-                            <h2 class="bg-green"> Caster </h2>
-                            <img src="https://source.unsplash.com/zGna6TW1nZ0"> 
-                        </div>      
-                    </div>
-                    <!-- card 3 -->
-                    <div class="col-2_sm-5">  
-                        <div>
-                            <h2 class="bg-green"> Tractor </h2>
-                            <img src="https://source.unsplash.com/Gs4wq28WutU"> 
-                        </div>    
-                    </div>
-                    <!-- card 4 -->
-                    <div class="col-2_sm-5">  
-                        <div>
-                            <h2 class="bg-green"> Shovel </h2>
-                            <img src="https://source.unsplash.com/JR7IPWMMXcc"> 
-                        </div>    
-                    </div>    
-                </div> 
+                </div>
+                {% endfor %}   
             </section>
 
             <!---------------------------- here we put the testimonial block -------------------------------------->  
