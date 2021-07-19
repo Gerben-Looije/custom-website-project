@@ -43,14 +43,16 @@ landscaping:
             <section class="padded-tb margin-t-4"> 
                 <!-- card 1 -->
                 <h2 class="text-center bg-green"> new in our collection </h2>
-                {% for item in page.card %}
-                <div class="grid-spaceAround text-center padded-sm margin-t-4"> 
-                  <div class="col-2_sm-5">  
-                    <h2 class="bg-green"> {{item.object}} </h2>   
-                    <h2 class="style bg-image tall-60" style="background-image: url('{{item.featured_image}}')"> </h2> 
-                  </div>    
-                </div>
-                {% endfor %}   
+                <div class="grid-spaceAround">
+                  {% for item in page.card %}
+                  <div class="text-center padded-sm margin-t-4"> 
+                    <div class="col-2_sm-5">  
+                      <h2 class="bg-green"> {{item.object}} </h2>   
+                      <h2 class="style bg-image tall-60" style="background-image: url('{{item.featured_image}}')"> </h2> 
+                    </div>    
+                  </div>
+                  {% endfor %}  
+              </div> 
             </section>
 
             <!---------------------------- here we put the testimonial block -------------------------------------->  
