@@ -325,7 +325,7 @@ a {
 /* .bg-rake {
     background-image: url('/images/rake.jpg')
     /* min-height: 10rem; */
-} */
+/* } */ */
 
 .img {
     max-width: 100%;
@@ -382,7 +382,8 @@ textarea {
 
 .show-xs,
 .show-sm,
-.show-md { display: none; }
+.show-m,
+.mobile-menu { display: none; }
 
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
