@@ -1,33 +1,51 @@
 ---
 layout: default
 icon:
- - group: fas fa-bacteria
-   category: Bacteria
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
- - group: fas fa-fire
-   category: Flammable
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
- - group: fas fa-head-side-mask
-   category: Use mask
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!     
- - group: fas fa-skull-crossbones
-   category: Toxic
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque quod saepe tempore voluptas vero praesentium doloremque ullam debitis aperiam!
+  - group: fas fa-head-side-mask
+    category: Use mask
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto
+      similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque
+      quod saepe tempore voluptas vero praesentium doloremque ullam debitis
+      aperiam!
+  - group: fas fa-bacteria
+    category: Bacteria
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto
+      similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque
+      quod saepe tempore voluptas vero praesentium doloremque ullam debitis
+      aperiam!
+  - group: fas fa-fire
+    category: Flammable
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto
+      similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque
+      quod saepe tempore voluptas vero praesentium doloremque ullam debitis
+      aperiam!
+  - group: fas fa-skull-crossbones
+    category: Toxic
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto
+      similique nemo, totam aliquam, sapiente commodi iste voluptates a cumque
+      quod saepe tempore voluptas vero praesentium doloremque ullam debitis
+      aperiam!
 card:
- - object: Rake
-   featured_image: /images/rake.jpg
- - object: Mower 
-   featured_image: /images/card-1.jpg
- - object: Tractor   
-   featured_image: /images/tractor.jpg
- - object: Shovel 
-   featured_image: /images/shovel-big.jpg 
+  - object: Rake
+    featured_image: /images/rake.jpg
+  - object: Mower
+    featured_image: /images/card-1.jpg
+  - object: Tractor
+    featured_image: /images/tractor.jpg
+  - object: Shovel
+    featured_image: /images/shovel-big.jpg
 landscaping:
- - discription: We used the Grass master for our landscaping, irrigation, and yard lighting projects.
-   customer: "- A very happy costumor"
+  - discription: >-
+      We used the Grass master for our landscaping, irrigation, and yard
+      lighting projects.
+    customer: '- A very happy costumor'
 ---
 
-            <!----------------------------------------------- This is the icon with text section ---------------------------------------------->
+<!----------------------------------------------- This is the icon with text section ---------------------------------------------->
             <section class="grid-spaceAround text-center padded-tb">   
                 {% for item in page.icon %}
                 <div class="col-2_sm-5"> 
@@ -69,6 +87,4 @@ landscaping:
                 <span class="quote-icon">”</span>
             </div> 
             {% endfor %}
-            </section>  
-
- 
+            </section>
