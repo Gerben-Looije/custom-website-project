@@ -8,4 +8,8 @@ $( document ).ready(function() {
         $(".mobile-menu").slideToggle();
         
     });
+
+
+    // Animate on scroll -Activate // 
+    AOS.init();
 });

@@ -19,6 +19,8 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             
             
+            <!------------------------------------------- this is our animate on scroll ---------------------------------------->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             
             <!------------------------------------------- this is our custom stylesheet ---------------------------------------->
             <link href="/style.css" rel="stylesheet">
@@ -30,17 +32,26 @@
 
                    <!-------------------------------------- This is the header section ------------------------------------------->
             <header class="m-hight-30">
-                <div  class="grid-spaceAround ">
-                    <div class="col-3_sm-12 text-center sm-margin-0">
+                <div class="grid">
+                    <div class="col-3 text-center hide-sm" data-aos="fade-right">
                          <i class="fas fa-tractor"> </i>
                     </div>
-                    <div  class="col-8_sm-10 sm-text-center margin-t-3 sm-margin-t-0">    
-                        <h1> Grass master  </h1>   
-                    </div>  
-                </div>  
+                    <div class="col-8_sm-11 sm-text-left margin-t-3 sm-margin-t-0">    
+                        <h1> Grass master  </h1> 
+                    </div> 
+                    <div class="col-1 show-sm"> 
+                        <div class="hamburger-button"> 
+                            <i class="fas fa-bars"></i>
+                        </div>     
+                    </div> 
+                </div> 
+                
+
+
+                
 
                 <!-- <div class="margin-b-2"> -->
-                    <nav class="grid bg-green text-center hide-sm">
+                    <nav class="grid bg-green text-center hide-sm" data-aos="fade-left">
                         <span class="col-3"> 
                             <a href="/index.html">      Home        </a>
                         </span>    
@@ -56,13 +67,8 @@
                     </nav>    
                 <!-- </div> -->
 
-                <div class="col-1 text-right show-sm"> 
-                    <div class="hamburger-button"> 
-                        <i class="fas fa-bars"></i>
-                    </div>     
-                </div>
-            
-                <nav class="mobile-menu"> 
+
+                <nav class="mobile-menu bg-l-green padded"> 
                     <a href="/index.html">      Home        </a>
                     <a href="/about.html">      About       </a>                  
                     <a href="/products.html">   Products    </a>                
@@ -176,6 +182,9 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
                 integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
                 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                <!------------ this is our animate on scroll javascript ------------------->
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
                 <!-- Our custom Javascript style -->
                 <script src="/scripts.js"></script>
