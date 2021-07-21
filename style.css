@@ -266,7 +266,7 @@ a:hover {
     /* border: 2px solid orange; */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 /* Header & footer styles -----------------------------*/
@@ -274,7 +274,7 @@ a:hover {
 h3 {
     font-size: 1rem;
     font-weight: normal;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 footer {
@@ -282,7 +282,7 @@ footer {
 }
 
 a {
-    display: inline-block;
+    display: block;
     padding: 1%;
 }
 

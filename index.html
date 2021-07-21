@@ -17,7 +17,7 @@ review:
 
             <!---------------------------------------------- Banner section ----------------------------------------->    
             {% for item in page.banner %}
-            <section class="banner grid-center bg-image margin-t-4 sm-margin-t-3" style="background-image: url('{{item.featured_image}}')">
+            <section class="banner grid-center bg-image margin-t-4 sm-margin-t-3" style="background-image: url('{{item.featured_image}}')" data-aos="fade-up" data-aos-delay="500">
                 <div class="col-8-middle text-center">
                   <h2> {{item.heading}} </h2>
                   <h4> {{item.discription}} </h4>
@@ -29,7 +29,7 @@ review:
                     <div class="col-6_sm-12"> 
                         <div class="tall-100 bg-image bg-mower md-tall-80"> </div>
                     </div>
-                <div class="col-6_sm-12 padded-a padded-md"> 
+                <div class="col-6_sm-12 padded-a padded-md" data-aos="fade-left" data-aos-delay="300"> 
                     <div class="bg-green">
                         <div class="border"> 
                             <h2> Landscapes for living.</h2>
@@ -37,7 +37,7 @@ review:
                         </div>
                     </div> 
                 </div>
-                <div class="col-6_sm-12 padded-lg padded-md">
+                <div class="col-6_sm-12 padded-lg padded-md" data-aos="fade-right" data-aos-delay="300">
                     <div class="bg-green">
                         <div class="border"> 
                             <h2> Grass with class.</h2>
@@ -57,7 +57,7 @@ review:
                 </div>
 
                 {% for item in page.review %}
-                <div class="col-3_xs-8 padded bg-green xs-margin-bottom">
+                <div class="col-3_xs-8 padded bg-green xs-margin-bottom" data-aos="flip-left"  data-aos-delay="100">
                     <p> {{item.heading}} </p>
                     <p> <em> {{item.customer}} </em></p>
                 </div> 
