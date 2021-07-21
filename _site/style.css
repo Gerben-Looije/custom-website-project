@@ -284,6 +284,7 @@ footer {
 a {
     display: block;
     padding: 1%;
+    text-align: left;
 }
 
 /* indivitiual Background images and video's ---------------------*/
