@@ -282,7 +282,7 @@ footer {
 }
 
 a {
-    display: block;
+    display: inline-block;
     padding: 1%;
     text-align: left;
 }
