@@ -130,19 +130,23 @@ body {
 .bg-image {
     background-color: grey; 
     background-size: cover;
+    background-image:     url('https://source.unsplash.com/rEM3cK8F1pk');
     background-position: center; 
     background-repeat: no-repeat;
+    background-color:     rgb(240,240,240);
+    padding-bottom: 10%;
   }
 
   
   
   /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column,
    it can't be applied to the column itself. */
-  
-.landscape     { padding-bottom: 66%;  }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
+.landscape     { padding-bottom: 66%;  }
+.landscape-wide { padding-bottom: 56%;  }
+
   
   
 /* Background Position ------------------------------*/
@@ -286,6 +290,12 @@ a {
     padding: 1%;
     text-align: left;
 }
+
+/* Image gallery ------------------------*/
+.gallery [class*="col-"] {
+    padding: 0.3%
+}
+
 
 /* indivitiual Background images and video's ---------------------*/
 .bg-mower {

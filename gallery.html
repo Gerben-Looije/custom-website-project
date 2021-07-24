@@ -1,0 +1,99 @@
+---
+layout: default
+gallery: 
+ - column-size: col-4
+   aspect-ratio: square 
+   background-image: /images/stadium.jpg
+ - column-size: col-4
+   aspect-ratio: square
+   background-image: /images/banner-gras.jpg
+ - column-size: col-4
+   aspect-ratio: square
+   background-image: /images/edge-mower.jpg 
+ - column-size: col-4
+   aspect-ratio: landscape-wide
+   background-image: /images/garden.jpg
+ - column-size: col-4
+   aspect-ratio: landscape-wide 
+   background-image: /images/golf.jpg
+ - column-size: col-4
+   aspect-ratio: landscape-wide
+   background-image: /images/grass-blocks.jpg
+ - column-size: col-4
+   aspect-ratio: portrait 
+   background-image: /images/house.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/rake.jpg
+ - column-size: col-4
+   aspect-ratio: portrait
+   background-image: /images/shovel-big.jpg
+ - column-size: col-4
+   aspect-ratio: landscape
+   background-image: /images/shovel-little.jpg
+ - column-size: col-4
+   aspect-ratio: landscape 
+   background-image: /images/tractor.jpg
+ - column-size: col-4
+   aspect-ratio: landscape 
+   background-image: /images/stadium.jpg   
+--- 
+
+
+<section class="padded"> 
+    <div class="gallery grid">
+
+        {% for item in page.gallery %}
+
+        <div class="{{item.column-size}}"> 
+            <div class="bg-image {{item.aspect-ratio}}" 
+                 style="background-image: url('{{item.background-image}}');"> 
+            </div> 
+        </div>
+
+        {% endfor %}
+
+    </div>
+</section>
+
+<!-- <div class="gallery grid"> 
+    <div class="col-12"> 
+      <div class="bg-image landscape-wide bg-1"> </div> 
+    </div>
+    <div class="col-6_xs-12"> 
+      <div class="bg-image portrait bg-2"> </div> 
+    </div> 
+    <div class="col-6_xs-12"> 
+      <div class="bg-image portrait bg-3"> </div> 
+    </div>
+    <div class="col-4_xs-12"> 
+      <div class="bg-image landscape bg-4"> </div> 
+    </div>
+    <div class="col-4_xs-12"> 
+      <div class="bg-image landscape bg-5"> </div> 
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image landscape bg-6"> </div> 
+    </div>
+    <div class="col-6_xs-12">
+      <div class="bg-image square bg-7"> </div> 
+    </div>
+    <div class="col-6_xs-12"> 
+      <div class="bg-image square bg-8"> </div> 
+    </div>
+    <div class="col-3_xs-12">
+      <div class="bg-image landscape bg-9"> </div> 
+    </div>
+    <div class="col-3_xs-12">
+      <div class="bg-image landscape bg-10"> </div> 
+    </div>
+    <div class="col-3_xs-12">
+      <div class="bg-image landscape bg-11"> </div> 
+    </div>
+    <div class="col-3_xs-12">
+      <div class="bg-image landscape bg-12"> </div> 
+    </div>
+    <div class="col-12">
+      <div class="bg-image landscape-wide bg-13"> </div> 
+    </div>
+  </div> -->
