@@ -13,3 +13,18 @@ $( document ).ready(function() {
     // Animate on scroll -Activate // 
     AOS.init();
 });
+
+lightGallery(document.getElementById('lightgallery'), {
+    download: true,
+    controls: true,
+    enableSwipe: true,
+    escKey: true
+});
+
+lightGallery(document.getElementById('lightgallery-2'), {
+    download: true,
+    controls: true,
+    enableSwipe: true,
+    escKey: true
+});
+

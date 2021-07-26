@@ -148,7 +148,6 @@ body {
 .landscape-wide { padding-bottom: 56%;  }
 
   
-  
 /* Background Position ------------------------------*/
 .bg-pos-t { background-position: top;    }
 .bg-pos-b { background-position: bottom; }
@@ -209,6 +208,17 @@ a {
 
 a:hover {
     color: orange;
+}
+
+.lg-sub-html {
+    background-color: black;
+    color: white;
+}
+
+.button {
+    border: 2px solid orange; 
+    background-color: grey;
+    margin: 5rem;
 }
 
 .border {
