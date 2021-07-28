@@ -1,6 +1,6 @@
 ---
 layout: default
-popup-gallery: true
+popup-gallery: false
 gallery-background: bg-featured
 gallery:
   - column-size: col-4
@@ -32,49 +32,52 @@ gallery:
 
 <!-------------------------------------- popup-gallery ---------------------------------------->
 {% if page.popup-gallery == true %}
-<section class="padded {{page.gallery-background}}">
+  <section class="padded {{page.gallery-background}}">
 
-  <h2> popup gallery </h2>
-  <div class="gallery grid" id="lightgallery">
+    <h2> popup gallery </h2>
+    <div class="gallery grid" id="lightgallery">
+
+      {% for item in page.gallery %}
+
+        <a class="{{item.column-size}}" href="{{item.background_image}}"> 
+          <div class="bg-image {{item.aspect-ratio}}" 
+              style="background-image: url('{{item.background_image}}');"> 
+          </div> 
+        </a>
+
+      {% endfor %}
+
+    </div>  
+  </section>
+
+  <!-- {% endif %} -->
+
+  {% else %}
+
+
+  <!-------------------------------------- standard gallery ----------------------------------------->
+
+  <section class="padded {{page.gallery-background}}">       
+
+    <h2> standard gallery </h2>
+    <!-- standard gallery -->
+    <div class="gallery grid">
 
     {% for item in page.gallery %}
-      <a class="{{item.column-size}}" href="{{item.background_image}}"> 
+
+      <div class="{{item.column-size}}"> 
         <div class="bg-image {{item.aspect-ratio}}" 
-             style="background-image: url('{{item.background_image}}');"> 
+            style="background-image: url('{{item.background_image}}');"> 
         </div> 
-      </a>
+      </div>
+
     {% endfor %}
 
-  </div>  
-</section>
-
-{% endif %}
-
-<!-------------------------------------- standard gallery ----------------------------------------->
-
-<section class="padded {{page.gallery-background}}">       
-
-  <h2> standard gallery </h2>
-  <!-- standard gallery -->
-  <div class="gallery grid">
-
-    {% for item in page.gallery %}
-
-    <div class="{{item.column-size}}"> 
-      <div class="bg-image {{item.aspect-ratio}}" 
-           style="background-image: url('{{item.background_image}}');"> 
-      </div> 
     </div>
-
-    {% endfor %}
-
-  </div>
-</section>
+  </section>
 {% endif %}
 
-
-
-
+{% include testimonial.html %}
 
 <!-- <div class="gallery grid"> 
     <div class="col-12"> 
