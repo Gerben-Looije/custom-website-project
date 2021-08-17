@@ -1,0 +1,14 @@
+{
+    "name": "Gerben site ",
+    "short_name": "Gerben site ",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e46a2c",
+    "background_color": "#e46a2c",
+    "display": "standalone"
+}
