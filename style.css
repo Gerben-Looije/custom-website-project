@@ -300,6 +300,38 @@ a {
     text-align: left;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-title:hover {
+    padding: 1%; 
+    display: inline-block;
+    color: orange;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 4rem;
+    padding: 1%;
+    margin-bottom: 1rem;
+    display: none;
+    background-color: #68a236;
+    z-index: 2;
+    text-align: left;
+    min-width: 10rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content a {
+    display: block;
+}
+
 /* Image gallery ------------------------*/
 .gallery [class*="col-"] {
     padding: 0.3%
@@ -373,6 +405,7 @@ a {
     bottom: 0;
     left: 0; 
     right: 0;
+    z-index: 2;
 }
 
 .mobile-menu a {
@@ -383,7 +416,7 @@ a {
 }
 .hamburger-button {
     position: relative;
-    z-index: 2; 
+    z-index: 3; 
     padding-right: 1rem;
     padding-top: 1rem;
 }
