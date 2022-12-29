@@ -19,17 +19,15 @@ gallery:
     aspect-ratio: square
     background_image: /images/house.jpg
     type: mower
-  - column-size: col-6_sm-12
+  - column-size: col-12
     aspect-ratio: landscape-wide
     background_image: /images/rake.jpg
-    type: villa 
+    type: villa
   - column-size: col-6_sm-12
     aspect-ratio: landscape-wide
     background_image: /images/shovel-big.jpg
     type: shovel
 ---
-
-
 <!-------------------------------------- popup-gallery ---------------------------------------->
 {% if page.popup-gallery == true %}
   <section class="padded {{page.gallery-background}}">
@@ -41,8 +39,7 @@ gallery:
       {% if item.type != 'villa' %}
 
         <a class="{{item.column-size}}" href="{{item.background_image}}"> 
-          <div class="bg-image {{item.aspect-ratio}}" 
-              style="background-image: url('{{item.background_image}}');"> 
+          <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
           </div> 
         </a>
       {% endif %}
@@ -66,8 +63,7 @@ gallery:
     {% for item in page.gallery %}
 
       <div class="{{item.column-size}}"> 
-        <div class="bg-image {{item.aspect-ratio}}" 
-            style="background-image: url('{{item.background_image}}');"> 
+        <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');"> 
         </div> 
       </div>
 
