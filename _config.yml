@@ -1,5 +1,5 @@
 _select_data:
-  aspect-ratio:
+  aspect-ratios:
     - square
     - portrait
     - portrait-tall
